@@ -10,7 +10,7 @@ const host = config.get<string>('host')
 const corsOrigin =  config.get<string>('corsOrigin')
 
 
-//an http server needs to be created. It is one of the arguments specifically needed to create a socket server!!
+//an http server needs to be created. It is one of the arguments specifically needed to create a socket server
 const httpServer = createServer(app)
 const io = new Server(httpServer, {
   cors: {
